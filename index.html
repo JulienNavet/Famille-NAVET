@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -41,6 +40,25 @@
       text-align: center;
       margin-top: 3em;
     }
+    .tree {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 3em;
+    }
+    .tree div {
+      border: 1px solid #7b0000;
+      padding: 10px 20px;
+      margin: 10px;
+      border-radius: 8px;
+      background: #fff5ee;
+      text-align: center;
+    }
+    .line {
+      width: 2px;
+      background-color: #7b0000;
+      height: 20px;
+    }
   </style>
 </head>
 <body>
@@ -62,6 +80,15 @@
 
   <h2>Acte symbolique</h2>
   <p>Ce blason est reconnu comme emblème de la lignée Navet, dans un esprit de transmission et de mémoire. Il incarne l'héritage de ceux qui, toujours, se sont relevés.</p>
+
+  <h2>Arbre généalogique</h2>
+  <div class="tree">
+    <div>Léon Auguste Charles NAVET</div>
+    <div class="line"></div>
+    <div>Cyrille Henri Eugène Léon NAVET</div>
+    <div class="line"></div>
+    <div>Julien NAVET</div>
+  </div>
 
   <footer>
     <p>© Julien Navet – Tous droits réservés. Reproduction interdite sans autorisation.</p>
