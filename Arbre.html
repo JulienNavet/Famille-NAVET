@@ -10,10 +10,27 @@
       font-family: Georgia, serif;
       background: #f8f4e3;
       color: #2e2e2e;
-      max-width: 800px;
       margin: auto;
       padding: 2em;
       text-align: center;
+    }
+
+    .blason-deco-page {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 30px;
+    }
+
+    .contenu-principal {
+      flex: 1;
+      max-width: 600px;
+    }
+
+    .blason-lateral {
+      width: 80px;
+      height: auto;
+      filter: drop-shadow(1px 1px 2px rgba(0,0,0,0.2));
     }
 
     h1 {
@@ -69,47 +86,50 @@
 <body>
   <div class="blason-deco-page">
     <img src="blason_navet.jpg" alt="Blason gauche" class="blason-lateral">
-  <h1>Arbre Généalogique</h1>
-  <div class="tree">
-    <div class="person">
-      <strong>Léon Jean Eugène NAVET</strong><br>
-      Né le 16 Février 1881 à Hémevez<br>
-      Décédé le 20 Avril 1931 à Montebourg<br>
+    <div class="contenu-principal">
+      <h1>Arbre Généalogique</h1>
+      <div class="tree">
+        <div class="person">
+          <strong>Léon Jean Eugène NAVET</strong><br>
+          Né le 16 Février 1881 à Hémevez<br>
+          Décédé le 20 Avril 1931 à Montebourg
+        </div>
+        <svg class="branch" width="30" height="50" xmlns="http://www.w3.org/2000/svg">
+          <path d="M15 0 C15 15, 15 35, 15 50" stroke="#7b0000" stroke-width="3" fill="transparent"/>
+        </svg>
+        <div class="person">
+          <strong>Henri Louis Léon NAVET</strong><br>
+          Né le 04 Novembre 1906 à Montebourg<br>
+          Décédé le 16 Mai 1990 à Caen
+        </div>
+        <svg class="branch" width="30" height="50" xmlns="http://www.w3.org/2000/svg">
+          <path d="M15 0 C15 15, 15 35, 15 50" stroke="#7b0000" stroke-width="3" fill="transparent"/>
+        </svg>
+        <div class="person">
+          <strong>Léon Auguste Charles NAVET</strong><br>
+          Né le 18 Novembre 1930 à Montebourg<br>
+          Décédé le 02 Janvier 2019 à Carentan
+        </div>
+        <svg class="branch" width="30" height="50" xmlns="http://www.w3.org/2000/svg">
+          <path d="M15 0 C15 15, 15 35, 15 50" stroke="#7b0000" stroke-width="3" fill="transparent"/>
+        </svg>
+        <div class="person">
+          <strong>Cyrille Henri Eugène Léon NAVET</strong><br>
+          Né le 18 Avril 1962 à Cherbourg<br>
+          Toujours vivant
+        </div>
+        <svg class="branch" width="30" height="50" xmlns="http://www.w3.org/2000/svg">
+          <path d="M15 0 C15 15, 15 35, 15 50" stroke="#7b0000" stroke-width="3" fill="transparent"/>
+        </svg>
+        <div class="person">
+          <strong>Julien Cyrille NAVET</strong><br>
+          Né le 07 Juillet 1994 à Quimper<br>
+          Toujours vivant
+        </div>
+      </div>
+      <a href="index.html">&#8592; Retour au blason</a>
     </div>
-    <svg class="branch" width="30" height="50" xmlns="http://www.w3.org/2000/svg">
-      <path d="M15 0 C15 15, 15 35, 15 50" stroke="#7b0000" stroke-width="3" fill="transparent"/>
-    </svg>
-    <div class="person">
-      <strong>Henri Louis Léon NAVET</strong><br>
-      Né le 04 Novembre 1906 à Montebourg<br>
-      Décédé le 16 Mai 1990 à Caen<br>
-    </div>
-    <svg class="branch" width="30" height="50" xmlns="http://www.w3.org/2000/svg">
-      <path d="M15 0 C15 15, 15 35, 15 50" stroke="#7b0000" stroke-width="3" fill="transparent"/>
-    </svg>
-    <div class="person">
-      <strong>Léon Auguste Charles NAVET</strong><br>
-      Né le 18 Novembre 1930 à Montebourg<br>
-      Décédé le 02 Janvier 2019 à Carentan<br>
-    </div>
-    <svg class="branch" width="30" height="50" xmlns="http://www.w3.org/2000/svg">
-      <path d="M15 0 C15 15, 15 35, 15 50" stroke="#7b0000" stroke-width="3" fill="transparent"/>
-    </svg>
-    <div class="person">
-      <strong>Cyrille Henri Eugène Léon NAVET</strong><br>
-      Né le 18 Avril 1962 à Cherbourg<br>
-      Toujours vivant
-    </div>
-    <svg class="branch" width="30" height="50" xmlns="http://www.w3.org/2000/svg">
-      <path d="M15 0 C15 15, 15 35, 15 50" stroke="#7b0000" stroke-width="3" fill="transparent"/>
-    </svg>
-    <div class="person">
-      <strong>Julien Cyrille NAVET</strong><br>
-      Né le 07 Juillet 1994 à Quimper<br>
-      Toujours vivant
-    </div>
+    <img src="blason_navet.jpg" alt="Blason droite" class="blason-lateral">
   </div>
-
-  <a href="index.html">&#8592; Retour au blason</a>
 </body>
 </html>
