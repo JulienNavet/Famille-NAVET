@@ -10,49 +10,102 @@
       font-family: Georgia, serif;
       background: #f8f4e3;
       color: #2e2e2e;
-      max-width: 600px;
+      max-width: 800px;
       margin: auto;
       padding: 2em;
       text-align: center;
     }
+
     h1 {
       color: #7b0000;
+      font-size: 2.5em;
+      margin-bottom: 0.5em;
     }
+
     .tree {
       display: flex;
       flex-direction: column;
       align-items: center;
-      margin-top: 3em;
+      margin-top: 2em;
     }
+
     .person {
-      border: 1px solid #7b0000;
-      border-radius: 8px;
-      padding: 10px 20px;
-      margin: 10px 0;
+      border: 2px solid #7b0000;
+      border-radius: 10px;
+      padding: 12px 25px;
+      margin: 12px 0;
       background-color: #fff5ee;
+      font-size: 1.1em;
+      box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+      line-height: 1.5;
     }
-    .line {
-      width: 2px;
-      height: 20px;
-      background-color: #7b0000;
+
+    .person:hover {
+      transform: scale(1.03);
     }
+
+    .branch {
+      margin: -5px 0;
+    }
+
     a {
       display: inline-block;
-      margin-top: 2em;
-      color: #7b0000;
+      margin-top: 3em;
+      padding: 10px 20px;
+      background-color: #7b0000;
+      color: #fff;
       text-decoration: none;
+      border-radius: 8px;
       font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    a:hover {
+      background-color: #a30000;
     }
   </style>
 </head>
 <body>
   <h1>Arbre Généalogique</h1>
   <div class="tree">
-    <div class="person">Léon Auguste Charles NAVET</div>
-    <div class="line"></div>
-    <div class="person">Cyrille Henri Eugène Léon NAVET</div>
-    <div class="line"></div>
-    <div class="person">Julien NAVET</div>
+    <div class="person">
+      <strong>Léon Auguste Charles NAVET</strong><br>
+      Né le [date] à [lieu]<br>
+      Décédé le [date] à [lieu]
+    </div>
+    <svg class="branch" width="30" height="50" xmlns="http://www.w3.org/2000/svg">
+      <path d="M15 0 C15 15, 15 35, 15 50" stroke="#7b0000" stroke-width="3" fill="transparent"/>
+    </svg>
+    <div class="person">
+      <strong>Léon Auguste Charles NAVET</strong><br>
+      Né le [date] à [lieu]<br>
+      Décédé le [date] à [lieu]
+    </div>
+    <svg class="branch" width="30" height="50" xmlns="http://www.w3.org/2000/svg">
+      <path d="M15 0 C15 15, 15 35, 15 50" stroke="#7b0000" stroke-width="3" fill="transparent"/>
+    </svg>
+    <div class="person">
+      <strong>Léon Auguste Charles NAVET</strong><br>
+      Né le [date] à [lieu]<br>
+      Décédé le [date] à [lieu]
+    </div>
+    <svg class="branch" width="30" height="50" xmlns="http://www.w3.org/2000/svg">
+      <path d="M15 0 C15 15, 15 35, 15 50" stroke="#7b0000" stroke-width="3" fill="transparent"/>
+    </svg>
+    <div class="person">
+      <strong>Cyrille Henri Eugène Léon NAVET</strong><br>
+      Né le [date] à [lieu]<br>
+      Décédé le [date] à [lieu]
+    </div>
+    <svg class="branch" width="30" height="50" xmlns="http://www.w3.org/2000/svg">
+      <path d="M15 0 C15 15, 15 35, 15 50" stroke="#7b0000" stroke-width="3" fill="transparent"/>
+    </svg>
+    <div class="person">
+      <strong>Julien Cyrille NAVET</strong><br>
+      Né le 07 Juillet 1994 à Quimper<br>
+      Toujours vivant
+    </div>
   </div>
 
   <a href="index.html">&#8592; Retour au blason</a>
