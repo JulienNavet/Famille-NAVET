@@ -73,6 +73,36 @@ img {
       margin-top: 1em;
       font-size: 0.95em;
     }
+    .gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content: center;
+  margin-top: 2em;
+}
+
+.gallery figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 250px;
+  margin: 0;
+}
+
+.gallery img {
+  width: 100%;
+  border: 4px solid #7b0000;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+}
+
+.gallery figcaption {
+  margin-top: 0.5em;
+  font-size: 0.95em;
+  font-style: italic;
+  text-align: center;
+}
+
   </style>
 </head>
 <body>
@@ -151,13 +181,50 @@ img {
 <h2>Galerie d'archives</h2>
 <p>Les documents suivants ont été réunis pour retracer le parcours de Léon Jean Eugène Navet.</p>
 <div class="gallery">
-  <img src="acte-de-naissance-leon-jean-eugene.jpg" alt="Acte de naissance">
-  <img src="acte-de-mariage-leon-jean.png" alt="Acte de mariage">
-  <img src="fiche-militaire-leon-jean.png" alt="Fiche militaire">
-  <img src="matricule-leon-jean.png" alt="Matricule militaire">
-  <img src="fiche-enquete1.JPG" alt="Fiche enquête prisonnier 1">
-  <img src="fiche-enquete2.JPG" alt="Fiche enquête prisonnier 2">
-</div>
+    <figure>
+      <a href="acte-de-naissance-leon-jean-eugene.jpg" target="_blank">
+        <img src="acte-de-naissance-leon-jean-eugene.jpg" alt="Acte de naissance">
+      </a>
+      <figcaption><em>Acte de naissance</em></figcaption>
+    </figure>
+    <figure>
+      <a href="acte-de-mariage-leon-jean.png" target="_blank">
+        <img src="acte-de-mariage-leon-jean.png" alt="Acte de mariage">
+      </a>
+      <figcaption><em>Acte de mariage</em></figcaption>
+    </figure>
+    <figure>
+      <a href="ligne-decennal-mariage-leon-jean.png" target="_blank">
+        <img src="ligne-decennal-mariage-leon-jean.png" alt="Ligne décennale de mariage">
+      </a>
+      <figcaption><em>Ligne décennale de mariage</em></figcaption>
+    </figure>
+    <figure>
+      <a href="fiche-militaire-leon-jean.png" target="_blank">
+        <img src="fiche-militaire-leon-jean.png" alt="Fiche militaire">
+      </a>
+      <figcaption><em>Fiche militaire</em></figcaption>
+    </figure>
+    <figure>
+      <a href="matricule-leon-jean.png" target="_blank">
+        <img src="matricule-leon-jean.png" alt="Matricule militaire">
+      </a>
+      <figcaption><em>Matricule militaire</em></figcaption>
+    </figure>
+    <figure>
+      <a href="fiche-enquete1.JPG" target="_blank">
+        <img src="fiche-enquete1.JPG" alt="Fiche enquête prisonnier 1">
+      </a>
+      <figcaption><em>Fiche d’enquête – prisonnier 1</em></figcaption>
+    </figure>
+    <figure>
+      <a href="fiche-enquete2.JPG" target="_blank">
+        <img src="fiche-enquete2.JPG" alt="Fiche enquête prisonnier 2">
+      </a>
+      <figcaption><em>Fiche d’enquête – prisonnier 2</em></figcaption>
+    </figure>
+  </div>
+
 
 
 
