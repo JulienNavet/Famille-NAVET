@@ -147,8 +147,14 @@ img.photo {
     font-size: 1em;
   }
 
-  img, img.photo {
+  img {
     max-width: 100%;
+    height: auto;
+  }
+
+  img.photo {
+    max-width: 300px; /* On réaffirme la limite ici */
+    width: 100%;
     height: auto;
   }
 }
