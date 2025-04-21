@@ -35,24 +35,17 @@ h3 {
 img {
   max-width: 100%;
   height: auto;
-  margin: 1.5em 0;
   border: 5px solid #7b0000;
   border-radius: 10px;
   box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 1.5em auto;
 }
 
-/* Limitation spécifique à l’image principale */
 img.photo {
   max-width: 300px;
   width: 100%;
   height: auto;
-}
-
-.photo {
-  display: block;
   margin: 2em auto;
 }
 
@@ -108,7 +101,7 @@ img.photo {
   text-align: center;
 }
 
-/* Responsive design */
+/* Responsive : version mobile */
 @media screen and (max-width: 600px) {
   body {
     padding: 1em;
@@ -129,11 +122,12 @@ img.photo {
   .gallery {
     flex-direction: column;
     align-items: center;
-    gap: 1.5em;
+    gap: 2em;
   }
 
   .gallery figure {
-    width: 90%;
+    width: 100%;
+    max-width: 320px;
   }
 
   .button-link {
@@ -145,17 +139,6 @@ img.photo {
 
   p {
     font-size: 1em;
-  }
-
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-
-  img.photo {
-    max-width: 300px; /* On réaffirme la limite ici */
-    width: 100%;
-    height: auto;
   }
 }
 </style>
