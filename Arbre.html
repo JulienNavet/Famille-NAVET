@@ -14,6 +14,58 @@
       padding: 2em;
       text-align: center;
     }
+    .tree {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.person {
+  background-color: #fefefe;
+  padding: 1em;
+  margin: 0.5em 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  width: 90%;
+  max-width: 350px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.fiche-lien {
+  text-decoration: none;
+  color: inherit;
+}
+
+.fiche-lien:hover {
+  background-color: #f0e7e7;
+  transition: background 0.3s;
+}
+
+.branch {
+  margin: -10px 0;
+}
+
+@media screen and (max-width: 600px) {
+  .person {
+    font-size: 0.95rem;
+    width: 95%;
+  }
+
+  .branch {
+    width: 20px;
+    height: 40px;
+  }
+
+  .branch path {
+    stroke-width: 2;
+  }
+}
+
 
     .blason-deco-page {
       display: flex;
