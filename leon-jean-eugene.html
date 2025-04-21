@@ -5,40 +5,36 @@
   <title>Biographie de Léon Jean Eugène Navet</title>
   <link rel="icon" href="favicon.ico" type="image/x-icon">
   <style>
-    body {
-      font-family: Georgia, serif;
-      background-color: #f8f4e3;
-      color: #2e2e2e;
-      padding: 2em;
-      max-width: 800px;
-      margin: auto;
-      line-height: 1.6;
-    }
-    h1 {
-      color: #7b0000;
-      font-size: 2.5em;
-    }
-    h2 {
-      color: #7b0000;
-      font-size: 1.8em;
-      margin-top: 2em;
-    }
-    h3 {
-      color: #7b0000;
-      font-size: 1em;
-      margin-top: 2em;
-    }
-    .gallery {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1em;
-  justify-content: center;
+body {
+  font-family: Georgia, serif;
+  background-color: #f8f4e3;
+  color: #2e2e2e;
+  padding: 2em;
+  max-width: 800px;
+  margin: auto;
+  line-height: 1.6;
+}
+
+h1 {
+  color: #7b0000;
+  font-size: 2.5em;
+}
+
+h2 {
+  color: #7b0000;
+  font-size: 1.8em;
+  margin-top: 2em;
+}
+
+h3 {
+  color: #7b0000;
+  font-size: 1em;
   margin-top: 2em;
 }
 
 img {
   max-width: 100%;
-  width: 300px;
+  height: auto;
   margin: 1.5em 0;
   border: 5px solid #7b0000;
   border-radius: 10px;
@@ -48,30 +44,34 @@ img {
   margin-right: auto;
 }
 
-    .photo {
-      display: block;
-      margin: 2em auto;
-    }
-    .button-link {
-      display: inline-block;
-      margin-top: 2em;
-      padding: 10px 20px;
-      background-color: #7b0000;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 8px;
-      font-weight: bold;
-      transition: background 0.3s;
-    }
-    .button-link:hover {
-      background-color: #a30000;
-    }
-    .source-link {
-      display: block;
-      margin-top: 1em;
-      font-size: 0.95em;
-    }
-    .gallery {
+.photo {
+  display: block;
+  margin: 2em auto;
+}
+
+.button-link {
+  display: inline-block;
+  margin-top: 2em;
+  padding: 10px 20px;
+  background-color: #7b0000;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.button-link:hover {
+  background-color: #a30000;
+}
+
+.source-link {
+  display: block;
+  margin-top: 1em;
+  font-size: 0.95em;
+}
+
+.gallery {
   display: flex;
   flex-wrap: wrap;
   gap: 1em;
@@ -100,6 +100,8 @@ img {
   font-style: italic;
   text-align: center;
 }
+
+/* Responsive design */
 @media screen and (max-width: 600px) {
   body {
     padding: 1em;
@@ -139,10 +141,11 @@ img {
   }
 
   img, img.photo {
-    width: 100%;
+    max-width: 100%;
     height: auto;
   }
 }
+
   </style>
 </head>
 <body>
